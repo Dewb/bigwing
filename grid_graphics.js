@@ -19,11 +19,17 @@ var map = [
 57,58,59,60,61,62,63,64,121,122,123,124,125,126,127,128,
 ];
 
-for (i=128; i<256; i++) {
+for (i=128; i<384; i++) {
 	map[i]=map[i-128]+128;
 }
 
+var empty = [];
+for (i=0; i<256; i++) {
+	empty[i] = 0;
+}
+
 var play_indicator = 0;
+var offset_rows = 0;
 
 function msg_int(r) {
 	var v = r >= 0 ? map[r]-1 : r;
@@ -36,6 +42,18 @@ function msg_int(r) {
 function stop() {
 	play_indicator = -1;
 	bang();
+}
+
+function clear() {
+	outlet(0, empty);
+}
+
+function offset(v) {
+	var r = v/16;
+	if (offset_rows != r) {
+		offset_rows = r;
+		bang();
+	}
 }
 
 function bang() {

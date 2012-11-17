@@ -36,7 +36,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 522.0, 288.833984, 50.0, 20.0 ],
-					"text" : "pipe 50"
+					"text" : "pipe 45"
 				}
 
 			}
@@ -230,7 +230,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 172.747345, 316.833984, 141.0, 18.0 ],
-					"text" : "/bigwing/ring/set #1 $1 9"
+					"text" : "/bigwing/ring/set #1 $1 7"
 				}
 
 			}
