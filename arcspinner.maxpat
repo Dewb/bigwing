@@ -63,8 +63,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 460.747345, 316.833984, 130.0, 18.0 ],
-					"text" : "/mlrtut/ring/set #1 $1 0"
+					"patching_rect" : [ 460.747345, 316.833984, 141.0, 18.0 ],
+					"text" : "/bigwing/ring/set #1 $1 0"
 				}
 
 			}
@@ -91,8 +91,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.747345, 316.833984, 130.0, 18.0 ],
-					"text" : "/mlrtut/ring/set #1 $1 3"
+					"patching_rect" : [ 315.747345, 316.833984, 141.0, 18.0 ],
+					"text" : "/bigwing/ring/set #1 $1 3"
 				}
 
 			}
@@ -229,8 +229,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.747345, 316.833984, 130.0, 18.0 ],
-					"text" : "/mlrtut/ring/set #1 $1 9"
+					"patching_rect" : [ 172.747345, 316.833984, 141.0, 18.0 ],
+					"text" : "/bigwing/ring/set #1 $1 9"
 				}
 
 			}
@@ -243,8 +243,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 316.833984, 137.0, 18.0 ],
-					"text" : "/mlrtut/ring/set #1 $1 14"
+					"patching_rect" : [ 19.0, 316.833984, 147.0, 18.0 ],
+					"text" : "/bigwing/ring/set #1 $1 14"
 				}
 
 			}
