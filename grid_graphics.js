@@ -1,12 +1,12 @@
-var bkgpattern = [
- 6, 5, 4, 3, 6, 5, 4, 3, 5, 4, 3, 2, 5, 4, 3, 2,
- 4, 3, 2, 1, 4, 3, 2, 1, 3, 2, 1, 1, 3, 2, 1, 1,
-];
+inlets = 1;
+outlets = 2;
 
-var bkg = [];
-for (i=0; i<8; i++) {
-	bkg = bkg.concat(bkgpattern);
-}
+var bkg = [
+ 6, 5, 4, 3, 6, 5, 4, 3, 6, 5, 4, 3, 6, 5, 4, 3,
+ 5, 4, 3, 2, 5, 4, 3, 2, 5, 4, 3, 2, 5, 4, 3, 2,
+ 4, 3, 2, 1, 4, 3, 2, 1, 4, 3, 2, 1, 4, 3, 2, 1,
+ 3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1,
+];
 
 var map = [
  1, 2, 3, 4, 5, 6, 7, 8,65,66,67,68,69,70,71,72,
@@ -31,8 +31,9 @@ for (i=0; i<256; i++) {
 var play_indicator = 0;
 var offset_rows = 0;
 
-function msg_int(r) {
-	var v = r >= 0 ? map[r]-1 : r;
+function msg_int(v) {
+//	var v = r >= 0 ? map[r]-1 : r;
+
 	if (play_indicator != v) {
     	play_indicator = v;
 		bang();
@@ -49,7 +50,7 @@ function clear() {
 }
 
 function offset(v) {
-	var r = v/16;
+	var r = Math.floor(v/16);
 	if (offset_rows != r) {
 		offset_rows = r;
 		bang();
@@ -57,9 +58,18 @@ function offset(v) {
 }
 
 function bang() {
-	grid = bkg.slice(0);
+	grid = bkg.slice((offset_rows%4)*16);
+	grid = grid.concat(bkg).concat(bkg).concat(bkg).concat(bkg);
+	
 	if (play_indicator >= 0) {
-        grid[play_indicator] = 15;
+        grid[play_indicator-offset_rows*16] = 15;
     }
-	outlet(0, grid);
+
+	var pixels = [];
+    for(i=0; i<256; i++) {
+		pixels[map[i]-1] = grid[i];
+	}
+
+	outlet(0, pixels);
+	outlet(1, offset_rows*16);
 }
