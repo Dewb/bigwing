@@ -32,8 +32,6 @@ var play_indicator = 0;
 var offset_rows = 0;
 
 function msg_int(v) {
-//	var v = r >= 0 ? map[r]-1 : r;
-
 	if (play_indicator != v) {
     	play_indicator = v;
 		bang();
@@ -58,15 +56,15 @@ function offset(v) {
 }
 
 function bang() {
-	grid = bkg.slice((offset_rows%4)*16);
+	var grid = bkg.slice((offset_rows%4)*16);
 	grid = grid.concat(bkg).concat(bkg).concat(bkg).concat(bkg);
 	
 	if (play_indicator >= 0) {
-        grid[play_indicator-offset_rows*16] = 15;
-    }
+		grid[play_indicator-offset_rows*16] = 15;
+	}
 
 	var pixels = [];
-    for(i=0; i<256; i++) {
+	for(i=0; i<256; i++) {
 		pixels[map[i]-1] = grid[i];
 	}
 
