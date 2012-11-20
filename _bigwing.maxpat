@@ -7,7 +7,7 @@
 			"revision" : 7
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1053.0, 806.0 ],
+		"rect" : [ 0.0, 44.0, 423.0, 300.0 ],
 		"bgcolor" : [ 0.867995, 1.0, 0.69399, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -610,7 +610,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 41.0, 234.0, 160.5, 18.0 ],
-									"text" : "has_api_key"
+									"text" : "no_api_key"
 								}
 
 							}
@@ -661,13 +661,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-67",
-									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 256.0, 197.0, 64.0, 58.0 ],
-									"text" : "symbol V9G11SZGYQV6EQC0F"
+									"patching_rect" : [ 256.0, 197.0, 64.0, 18.0 ],
+									"text" : "bang"
 								}
 
 							}
@@ -1178,7 +1177,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-93",
@@ -1192,7 +1191,7 @@
 					"presentation_rect" : [ 280.0, 9.0, 131.0, 24.0 ],
 					"rounded" : 8.0,
 					"text" : "Echo Nest API Key",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -2282,8 +2281,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 123.0, 469.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 98.5, 98.75, 312.5, 20.0 ],
-					"text" : "knockinboots.m4a"
+					"presentation_rect" : [ 98.5, 98.75, 312.5, 20.0 ]
 				}
 
 			}
@@ -2775,7 +2773,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -3119,7 +3116,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 919.0, 66.5, 60.0, 18.0 ],
-									"text" : "247849"
+									"text" : "0"
 								}
 
 							}
@@ -6456,7 +6453,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 105.0, 140.0, 71.0, 18.0 ],
-									"text" : "2.418457"
+									"text" : "1."
 								}
 
 							}
@@ -9289,13 +9286,6 @@
 				"bootpath" : "/Users/dewb/dev/monome/bigwing",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "apikey.txt",
-				"bootpath" : "/Users/dewb/dev/monome/bigwing",
-				"patcherrelativepath" : "",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
