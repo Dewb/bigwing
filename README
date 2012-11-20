@@ -3,4 +3,15 @@ bigwing
 live remix application in Max/MSP using Echo Nest analysis
 for monome 256 + arc4
 
-* Requires Max6 and a custom Max6 port of en_analzyer~ (http://github.com/dewb/en_analyzer)
+see http://docs.monome.org/doku.php?id=app:bigwing for more
+
+by Michael Dewberry
+November 2012
+dewb.org
+
+thanks:
+  tehn
+  stretta
+  paul lamere
+  melinda green
+
