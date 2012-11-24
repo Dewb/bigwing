@@ -737,7 +737,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 256.0, 416.0, 146.0, 18.0 ],
-					"text" : "/sys/port 24405"
+					"text" : "/sys/port 21368"
 				}
 
 			}
@@ -833,7 +833,7 @@
 					"fontsize" : 9.0,
 					"framecolor" : [ 0.25098, 0.25098, 0.25098, 1.0 ],
 					"id" : "obj-2",
-					"items" : [ "monome 256 (m0000664)", ",", "monome arc 4 (m0000580)" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,

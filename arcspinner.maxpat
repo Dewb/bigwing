@@ -9,7 +9,7 @@
 ,
 		"rect" : [ 572.0, 126.0, 651.0, 626.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -188,7 +188,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 270.5, 258.833954, 50.0, 20.0 ]
+					"patching_rect" : [ 270.5, 258.833954, 50.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.5, 1.833954, 70.0, 20.0 ]
 				}
 
 			}
